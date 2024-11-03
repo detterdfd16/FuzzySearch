@@ -10,9 +10,9 @@ b = ["Amazon", "Facebook", "Instagram",
 
 def edit_distance(s1: str, s2: str) -> int:
     """
-    Calculate the Optimal String Alignment Distance between two strings: \n
+    Calculate the Damerau-Levenshtein distance between two strings: \n
     1 distance operations are: deletion, insertion, substitution, transposition \n
-    This function ignores letter cases of passed strings \n
+    This function is case-insensitive \n
     """
     s1 = s1.lower()
     s2 = s2.lower()
